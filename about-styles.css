@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    background-color: black;
+    padding: 20px 0;
+}
+
+.name {
+    font-weight: 300;
+    color: #ffd85e;
+    font-size: 25px;
+    margin: auto 50px;
+}
+
+.nav-container {
+    margin: auto 90px auto auto
+}
+
+a {
+    transition: 0.15s ease-in-out all;
+}
+
+a:hover {
+    color: #ffd85e;
+}
+
+
+.links-container {
+    transition: colors .5s ease-in-out;
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0 25px;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+body {
+    background-color: #090909;
+}
+
+.container {
+    display: flex;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.title {
+    color: #FFDB5E;
+    font-weight: 800;
+    font-size: 96px;
+}
+
+.left {
+    padding-left: 70px;
+    padding-top: 90px;
+}
+
+.right {
+    padding-left: 170px;
+    padding-top: 90px;
+}
+
+.title span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #303030;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+.about-me {
+    font-size: 24px;
+    color: white;
+    margin-left: 30px;
+}
+
+.about-me span {
+    color: #FFDB5E;
+    font-weight: 800;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #303030;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+.description {
+    padding-left: 40px;
+}
+
+.left {
+    width: 1000px;
+}

@@ -10,13 +10,15 @@
 .header {
     display: flex;
     background-color: black;
-    padding: 40px 0;
+    padding: 20px 0;
+    animation: none;
+    opacity: 100%;
 }
 
 .name {
     font-weight: 300;
     color: #ffd85e;
-    font-size: 36px;
+    font-size: 25px;
     margin: auto 50px;
 }
 
@@ -24,7 +26,17 @@
     margin: auto 90px auto auto
 }
 
+a {
+    transition: 0.15s ease-in-out all;
+}
+
+a:hover {
+    color: #ffd85e;
+}
+
+
 .links-container {
+    transition: colors .5s ease-in-out;
     display: flex;
     list-style: none;
 }
@@ -32,7 +44,105 @@
 a {
     text-decoration: none;
     color: white;
-    margin: 0 30px;
+    margin: 0 25px;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 22px;
 }
+
+body {
+    background-color: #090909;
+}
+
+.rectangle {
+    background-color: white;
+    margin: 107px 0 23px 0px;
+    width: 172px;
+    height: 17px;
+}
+
+.text {
+    font-weight: 800;
+    color: white;
+    font-size: 80px;
+}
+
+.bio {
+    font-weight: 300;
+    color: white;
+    font-size: 24px;
+    margin: 30px 0px 0px 0px;
+}
+
+.container {
+    display: flex;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.left {
+    width: 1500px;
+    padding-left: 107px;
+}
+
+.right {
+    padding-top: 150px;
+    padding-right: 100px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.middle{
+    
+}
+.btn{
+    background: none;
+    border: 2px solid #fff;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    color: white;
+}
+
+.btn:hover{
+    color: black;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn1::before{
+    transform: scaleX(0);
+}
+
+.btn1:hover::before{
+    transform: scaleX(1);
+}
+
+
